@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora-font {
+            font-family: 'Sora', serif;
+        }
+    </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="sora-font bg-base-200 min-h-screen flex flex-col">
+    <header class=" container mx-auto mt-5">
+        <div class="navbar bg-base-100 shadow-sm  rounded-lg">
+            <div class="flex-none pl-3">
+                <img class="w-10" src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="flex-1">
+
+                <p class="pl-4 text-3xl">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex-none">
+
+                <button class="btn btn-active btn-primary rounded-lg hover:scale-105 transition-all duration-300">Back to Desk</button>
+
+            </div>
+    </header>
+    <main class="container mx-auto flex-grow">
+        <p class="text-2xl font-extrabold text-center mt-5">Blogs</p>
+
+        <div class="bg-slate-200 p-5 rounded-lg mt-5">
+            <p class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</p>
+            <p class="mt-2"><span class="text-lg font-medium">Answer:</span> We can select an element in the DOM by selecting its ID, class name, tag name, or with CSS selectors such as querySelector and querySelectorAll. </p>
+        
+        </div>
+        <div class="bg-slate-200 p-5 rounded-lg mt-5">
+            <p class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <p class="mt-2"><span class="text-lg font-medium">Answer:</span> InnerHTML returns the HTML content of an element,InnerText returns the text-content and textContent returns the text content of the chosena node and its child-nodes.</p>
+        
+        </div>
+
+        <div class="bg-slate-200 p-5 rounded-lg mt-5">
+            <p class="font-semibold">Question-3:What is event delegation in the DOM?</p>
+            <p class="mt-2"><span class="text-lg font-medium">Answer:</span> When a single parent element's event listener is used to handle events from its descendant child elements or nodes that is called event delegation.</p>
+        
+        </div>
+
+        <div class="bg-slate-200 p-5 rounded-lg mt-5">
+            <p class="font-semibold">Question-4: What is event bubbling in the DOM?</p>
+            <p class="mt-2"><span class="text-lg font-medium">Answer:</span> Event Bubbling is a concept where an element receives an event and that event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
+        
+        </div>
+
+        <div class="bg-slate-200 p-5 rounded-lg mt-5">
+            <p class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript? </p>
+            <p class="mt-2"><span class="text-lg font-medium">Answer:</span> We can use document.createElement() for creating an element, document.createTextNode() for adding an element and element.remove() for removing an element in JavaScript.</p>
+        
+        </div>
+   
+
+    </main>
+</body>
+</html>
