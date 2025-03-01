@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,178 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
         .sora-font {
-      font-family: 'Sora', serif;
-    }
+            font-family: 'Sora', serif;
+        }
     </style>
     <title>Dev Board</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="sora-font">
-    
+
+<body class="sora-font bg-red-200 ">
+    <header class=" container mx-auto ">
+        <div class="navbar bg-base-100 shadow-sm  rounded-lg">
+            <div class="flex-none pl-3">
+                <img class="w-10" src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="flex-1">
+
+                <p class="pl-4 text-3xl">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex-none">
+                <!--  -->
+                <div class="btn rounded-full bg-base-200 p-5 mr-4">
+                    <div class="flex items-center gap-4">
+                        <img class="w-7" src="./assets/checkbox.png" alt="">
+                        <p class="font-bold text-2xl">23</p>
+                    </div>
+                </div>
+
+                <div class="btn rounded-full bg-base-200 p-2 ">
+                    <img class=" w-7 " src="./assets/theme-btn.png" alt="">
+                </div>
+
+            </div>
+    </header>
+<main class="container mx-auto ">
+  <section class=" mt-4 rounded-lg p-4  ">
+    <div class="flex gap-4  ">
+      <section class="w-9/12  ">
+        <!-- 1st row boxes div-->
+        <div class="flex flex-row">
+            <!-- 1st box div -->
+            <div class=" bg-base-200 pl-5 pt-8 basis-64 rounded-2xl ">
+                <div class="flex items-center gap-9">
+                    <div class="btn rounded-full  p-2">
+                        <img class="" src="./assets/checkbox.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <p class=" ">Task Assigned</p>
+                        <p class="font-bold text-2xl">06</p>
+                    </div>         
+                </div>
+            </div>
+            <!-- 2nd box div -->
+             <div class="ml-8 p-4 rounded-2xl  bg-linear-to-r from-indigo-500 to-sky-500 basis-128 flex items-center gap-4">
+                <div class="pl-6">
+                    <img src="./assets/board.png" alt="">
+                </div>
+                 <div class="text-white text-xl pl-1 pt-3">
+                    <p class="">Discover Something</p>
+                    <p class="">New Today!</p>
+                 </div>
+             </div>
+             <!-- 3rd box div -->
+             <div class="ml-7 bg-base-200 pl-5 pt-8 basis-64 rounded-2xl">
+                <div class="flex items-center gap-9">
+                    <div class="btn rounded-full  p-2">
+                        <img class="" src="./assets/calender.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <p class=" ">Sunday,</p>
+                        <p class="font-bold text-lg">Mar 02 2025</p>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <!-- 2nd row boxes -->
+        <div class="mt-10 grid grid-cols-3 gap-4">
+           <!-- 1st box -->
+           <div class="card w-80 bg-base-200 p-4 rounded-lg">
+            <div class="badge  mb-2">ShopEase</div>
+            <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+              
+             <div class="flex items-center gap-4">
+                <div>
+                    <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                    <p class="font-semibold text-gray-700">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+            </div>
+        </div>
+        <!-- 2nd box -->
+        <div class="card w-80 bg-base-200 p-4 rounded-lg">
+            <div class="badge  mb-2">ShopEase</div>
+            <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+              
+             <div class="flex items-center gap-4">
+                <div>
+                    <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                    <p class="font-semibold text-gray-700">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+            </div>
+        </div>
+         <!-- 3rd box -->
+         <div class="card w-80 bg-base-200 p-4 rounded-lg">
+            <div class="badge  mb-2">ShopEase</div>
+            <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+              
+             <div class="flex items-center gap-4">
+                <div>
+                    <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                    <p class="font-semibold text-gray-700">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+            </div>
+        </div>
+          <!-- 4th box -->
+          <div class="card w-80 bg-base-200 p-4 rounded-lg mt-4">
+            <div class="badge  mb-2">ShopEase</div>
+            <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+              
+             <div class="flex items-center gap-4">
+                <div>
+                    <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                    <p class="font-semibold text-gray-700">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+            </div>
+        </div>
+           <!-- 5th box -->
+           <div class="card w-80 bg-base-200 p-4 rounded-lg mt-4">
+            <div class="badge  mb-2">ShopEase</div>
+            <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+              
+             <div class="flex items-center gap-4">
+                <div>
+                    <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                    <p class="font-semibold text-gray-700">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+            </div>
+        </div>
+            <!-- 6th box -->
+            <div class="card w-80 bg-base-200 p-4 rounded-lg mt-4">
+                <div class="badge  mb-2">ShopEase</div>
+                <h2 class="font-semibold text-lg">Fix Mobile Button Issue</h2>
+                <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-5">Debug using Chrome DevTools, check for overlapp...</p>
+                  
+                 <div class="flex items-center gap-4">
+                    <div>
+                        <p class="text-sm mt-4 font-semibold text-gray-500">Deadline</p>
+                        <p class="font-semibold text-gray-700">21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary btn-active rounded-lg px-8 mt-5 ml-1">Completed</button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section></section>
+    </div>
+
+  </section>
+</main>
 </body>
+
 </html>
