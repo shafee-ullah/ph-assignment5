@@ -40,8 +40,8 @@ for (let i = 0; i < completeBtns.length; i++) {
         const messageDiv = document.createElement('div');
         messageDiv.className = 'text-sm activity-message';
         messageDiv.innerHTML = `
-            <p class="font-medium">You have completed the task - ${taskName}</p>
-            <p class="text-xs text-gray-500 mt-1">${time}</p>
+            <p class="font-medium">You have completed the task - ${taskName} at ${time} </p>
+           
         `;
         activityLog.appendChild(messageDiv);
 
