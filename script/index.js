@@ -37,13 +37,13 @@ for (let i = 0; i < completeBtns.length; i++) {
           
         const taskName = this.closest('.card').querySelector('h2').textContent;
         const time = new Date().toLocaleTimeString();
-        const messageDiv = document.createElement('div');
-        messageDiv.className = 'text-sm activity-message';
-        messageDiv.innerHTML = `
+        const messages = document.createElement('div');
+        messages.className = 'text-sm activity-message';
+        messages.innerHTML = `
             <p class="font-medium">You have completed the task - ${taskName} at ${time} </p>
            
         `;
-        activityLog.appendChild(messageDiv);
+        activityLog.appendChild(messages);
 
         
         Count++;
